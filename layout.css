@@ -50,7 +50,7 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
 .part-slide h2 { font-size:2rem; color:#000; text-align:center; margin-top:30px; font-family: 'Open Sans', sans-serif }
 .part-slide .remark-slide-number { display:none }
 
-.my-header {
+.header {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -58,7 +58,7 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
   width: 100%
 }
 
-.my-footer {
+.footer {
   background-image: url("img/slub_logo_wo.svg");
   background-repeat: no-repeat;
   background-position: 0px 10px;
@@ -72,18 +72,18 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
   font-family: 'Open Sans', sans-serif
 }
 
-.my-footer td {
+.footer td {
   font-size: 8pt;
   color: #222;
   padding:0px 10px;
   font-family: 'Open Sans', sans-serif
 }
 
-.my-footer a { color:#cc0000; text-decoration:none; font-family: 'Open Sans', sans-serif }
-.my-footer thead { background:#fff }
-.my-footer tbody tr:nth-child(even) { background:transparent }
+.footer a { color:#cc0000; text-decoration:none; font-family: 'Open Sans', sans-serif }
+.footer thead { background:#fff }
+.footer tbody tr:nth-child(even) { background:transparent }
 
-.title-slide .my-header {
+.title-slide .header {
   background-image: url("img/slub_logo.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px;
@@ -95,15 +95,15 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
   width: 100%
 }
 
-.title-slide .my-footer {
+.title-slide .footer {
   display: none
 }
 
-:not(.title-slide) > .my-title-footer {
+:not(.title-slide) > .title-footer {
   display: none
 }
 
-.title-slide .my-title-footer {
+.title-slide .title-footer {
   background-image: url(img/bg.png);
   background-position: 0px 0px;
   border-top: 0px solid #222;
@@ -115,16 +115,16 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
   left: 0px;
   font-family: 'Open Sans', sans-serif;
 }
-.title-slide .my-title-footer a { color:#fff; text-decoration:none; font-family: 'Open Sans', sans-serif }
+.title-slide .title-footer a { color:#fff; text-decoration:none; font-family: 'Open Sans', sans-serif }
 
-.title-slide .my-title-footer td {
+.title-slide .title-footer td {
   font-size: 12pt;
   color: #fff;
   padding:0px 10px;
   font-family: 'Open Sans', sans-serif
 }
 
-/*.title-slide .my-title-footer tbody { background: transparent }*/
+/*.title-slide .title-footer tbody { background: transparent }*/
 
 .cols{
   display: flex;
