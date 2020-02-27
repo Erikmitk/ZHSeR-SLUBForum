@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vorstellung EFRE ZHSeR-Team Zentraler Hosting-Service für e-Ressourcen</title>
+    <title>Vorstellung EFRE ZHSeR — Zentraler Hosting-Service für e-Ressourcen</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="layout.css"/>
     <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
@@ -49,29 +49,179 @@ layout: true
 class: title-slide
 count: false
 
-# Vorstellung EFRE ZHSeR-Team Zentraler Hosting-Service für e-Ressourcen
+# Vorstellung EFRE ZHSeR — Zentraler Hosting-Service für e-Ressourcen
 ## EFRE ZHSeR
 
 ---
 
-# Overview
+# Agenda
 
-- Section 1
-  + Subsection 1
-- Section 2
+- Vorstellung
+
+- Rahmenbedingungen des Projekts
+
+- Projektziele (Chancen und Herausforderungen)
+  + Technische Modernisierung
+  + Standardisierte Metadatenbeschreibung für Nutzungsrechte
+  + Automatisierte Verarbeitung und Workflows
+
+- Fragen?
+
+---
+
+# Vorstellung
+
+Erik Sommer (Referatsleiter IT)
+
+Referat 2.5: Digitale Objekte
+
+- Backend-Systeme der Digitalen Bibliothek:
+  - Kitodo.Production (Betrieb und Entwicklung)
+  - OCR
+  - Cross Media Repository
+  - DBoD / Shibboleth
+
+---
+
+class: slide
+
+# Rahmenbedingungen des Projekts
+
+#### ZHSeR - Zentraler Hosting-Service für e-Ressourcen
+
+#### Projektteam
+
+- Thomas Bär (Technischer Projektleiter)
+  - Thomas.Baer@slub-dresden.de
+- Falk Wallis (Informatiker)
+  - Falk.Wallis@slub-dresden.de
+- Justine Duchatelet (Bibliothekarin)
+  - Justine.Duchatelet@slub-dresden.de
+
+#### Laufzeit
+
+- 01.10.2019 – 30.09.2021
 
 ---
 
 class: part-slide
-count: false
 
-# Topic 1
+# Technische Modernisierung
+
+---
+
+class: slide
+
+# Rückblick: DBoD (Databases on Demand)
+
+* Hosting-Service für e-Ressourcen!
+  - Entwickelt als EFRE-Mitteln 2008–2010
+  - 18 sächsische und 8 deutschlandweite Einrichtungen
+
+* Technisch in die Jahre gekommen
+  - monolithisches System
+  - viel manuelle Konfigurationsarbeit
+
+* Unterstützte Datenformate
+  - primär für die Bereitstellung von Datenbanken über den Browser
+  - theoretisch jedes Format denkbar, aber ohne große Performance
+
+---
+
+class: slide
+
+# ZHSeR - Modernisierung
+
+* Modulares System
+  - Klare Trennung von Funktionalitäten (Microservices)
+  - Nachnutzung verwendeter Komponenten soweit sinnvoll und möglich
+
+* Evaluierung neuere Bereitstellungskomponenten
+  - viele Formate können direkt im Browser ausgeliefert werden
+  - Erweiterung der Unterstützung von Formaten (ePub, Audio/Video, …)
+
+* Anbindung Cross-Media Repository als Speicherschicht
+
+* Herzstück ist Zugriffskomponente
+  - Darf auf die Ressource zugegriffen werden?
+  - Ja? Nein? Unter folgenden Bedingungen!
 
 ---
 
 class: part-slide
 
-# Many thanks for your attention!
+# Standardisierte Metadatenbeschreibung für Nutzungsrechte
+
+---
+
+# Aktueller Stand Nutzungsrechte
+
+- eingekaufte eRessourcen die wir hosten sind mit Nutzungsrechten unterlegt, die durchgesetzt werden müssen!
+
+* DBoD ist das einzige System was bei uns in der Lage ist
+  - beschränkt auf damalige Lizenzierungsmodelle
+
+* Nutzungsbestimmungen nicht maschinenlesbar vorhanden
+  - im Fließtext von Vertragen
+  - in Emails
+  - In Drittsystemen hinterlegt
+
+-> hoher Aufwand an manuellen Konfigurationen und Unklarheiten
+
+---
+
+# Theorie und Praxis
+
+## Theorie:
+
+* Es existieren offene Standards für Digitale Rechteverwaltung
+  - ODRL, MPEG21, PREMIS, Studienprojekte…
+
+## Praxis
+* _keine_ hat sich in unserem Sektor durchgesetzt und es gibt praktisch keinerlei Nutzung
+
+-> Es existiert keine standardisierte Metadatenbeschreibung für Nutzungsrechte
+
+---
+class: slide
+
+# libRML
+
+* *Lib*rary *R*ights *M*achine-Readable *L*anguage
+
+* Wir entwickeln ein solches Schema und werden es in die Diskussion einbringen.
+  - komplex genug um unsere Anwendungsfälle abzudecken
+  - einfach genug um sowohl mensch- als auch maschinenlesbar zu halten
+  - leicht zu erzeugen
+
+---
+class: part-slide
+
+# Automatisierte Verarbeitung und Workflows
+
+---
+class: slide
+
+# Integration in bestehende Workflows
+
+* bisher viel händische Arbeit und Konfiguration
+  - muss automatisiert werden!
+
+* Zugriffskomponente soll auch für _alle_ e-Ressourcen des Hauses abrufbar sein
+  - Integration Datenmanagement
+  - Best Case: Verlage liefern direkt standardisierte Daten nach unserem Schema
+
+* Anzeige und Durchsetzung der Rechte an Präsentationssystemen
+  - Ampel im Katalog
+  - Embargo-behaftete Publikationen liegen nicht auf Halde
+
+---
+
+class: part-slide
+
+# Vielen Dank für Ihre Aufmerksamkeit!
+
+# Gibt es Fragen?
 
 <center>
 <a href="https://wrznr.github.io/slide-template/">wrznr.github.io/slide-template</a>
